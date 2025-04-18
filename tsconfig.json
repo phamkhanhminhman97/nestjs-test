@@ -1,0 +1,42 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    }
+  },
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "esModuleInterop": true,
+    // "noLib": false,
+    // "noEmit": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ES2020",
+    "types": ["node", "jest"],
+    "sourceMap": true,
+    // "allowJs": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  // "include": [
+  //   "src/**/*"
+  // ],
+  "exclude": [
+    "node_modules",
+    "webpack"
+    // "**/*.spec.ts"
+  ]
+}
